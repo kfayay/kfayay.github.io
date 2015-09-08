@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0 0;
+            padding: 0 0;
+        }
+        ol,ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .header{
+            background-color: #0c2635;
+            height: 183px;
+            margin-bottom: 20px;
+        }
+        .warp{
+            margin: 0 auto;
+            width: 960px;
+            overflow: hidden;
+        }
+        .header .warp>img{
+            display: block;
+            margin: 45px 10px;
+        }
+        .header .warp .nav{
+            background-color: #dcdcdc;
+            height: 53px;
+            border-radius: 4px;
+        }
+        .header .warp ul{
+            display: inline-block;
+        }
+        .header .warp ul li{
+            display: inline-block;
+            height: 43px;
+            line-height: 43px;
+            margin: 5px 5px;
+            padding: 0 10px;
+        }
+        .header .warp a{
+            color: black;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .header .on{
+            background-color: #b6c2c7;
+        }
+        .header .search{
+            background-color: #fff;
+            float: right;
+            margin: 4px 10px;
+            height: 45px;
+        }
+        .header .warp input[type="search"] {
+            height: 45px;
+            width: 234px;
+            font-size: 16px;
+            font-style: italic;
+            font-weight: lighter;
+            border: none;
+            color: #6e6e6e;
+        }
+        .header .warp input[type="button"]{
+            float: right;
+            background: #fff url("images/spotlight.gif") no-repeat center;
+            border-style: none;
+            height: 45px;
+            width: 16px;
+            cursor: pointer;
+        }
+        .statement p:nth-child(1){
+            margin: 50px 30px 20px 20px;
+            text-align: center;
+        }
+        .statement p:nth-child(2){
+            margin: 0 30px 0 20px;
+            color: #646c6f;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        .ads{
+            height: 281px;
+            overflow: hidden;
+        }
+        .statement{
+            width: 250px;
+            float: left;
+        }
+        .statement p{
+            font-size: 16px;
+            color: #073f5a;
+        }
+        .display {
+            font-size: 0;
+            line-height: 3px;
+            width: 230px;
+            float: right;
+        }
+        .introduction{
+            height: 346px;
+        }
+        .introduction .warp ul li{
+            float: left;
+            width: 33.33%;
+            line-height: 1.4em;
+            background-color: #dcdcdc;
+        }
+        .introduction .warp ul li.select{
+            background-color: #e9f1f4;
+        }
+        .introduction .warp ul li p{
+            padding: 10px;
+            height: 88px;
+            font-size: 14px;
+        }
+        .introduction .warp li a{
+            color: black;
+            font-weight: bold;
+        }
+        .introduction .warp ul li p img{
+            float: left;
+            vertical-align: text-top;
+            margin-right: 10px;
+        }
+        .content{
+            background: url("images/bg-content.gif") repeat;
+            padding-top: 85px;
+            padding-bottom: 20px;
+        }
+        .blog{
+            float: left;
+            width: 300px;
+        }
+        .blog ul{
+            margin: 0 10px;
+        }
+        .blog ul li{
+            margin: 15px 0;
+            color: white;
+            line-height: 20px;
+        }
+        .blog p{
+            font-size: 14px;
+        }
+        .blog span{
+            font-size: 12px;
+            color: #456d87;
+        }
+        .blog a{
+            background-image: url("images/bg-comment.gif");
+            display: inline-block;
+            width: 19px;
+            height: 19px;
+            text-align: center;
+            color: white;
+            font-size: 12px;
+            line-height: 19px;
+        }
+        .tool{
+            float: right;
+            width: 630px;
+            background-color: #03354e;
+        }
+        .tool p{
+            padding: 10px;
+            color: white;
+            line-height: 20px;
+            font-size: 16px;
+        }
+        .tool li{
+            float: left;
+            width: 46%;
+            padding:2%;
+        }
+        .tool li a{
+            display: block;
+            vertical-align: middle;
+            color: white;
+        }
+        .tool li img{
+            float: left;
+        }
+        .tool li h3{
+            height: 79px;
+            padding-top: 35px ;
+        }
+        .tool li p{
+            font-size: 12px;
+        }
+        .footer {
+            background-color: #0c2635;
+            color: #456f7f;
+        }
+        .footer .warp>ul>li{
+            display: inline-block;
+            vertical-align: top;
+        }
+        .footer .warp>ul>li:nth-child(1){
+            width: 300px;
+        }
+        .footer .warp>ul>li:nth-child(2)
+        {
+            width: 200px;
+        }
+        .footer .warp>ul>li:nth-child(3){
+            max-width: 400px;
+        }
+        .footer .warp>ul>li h4{
+            padding: 10px 0;
+            text-transform: uppercase;
+        }
+        .address{
+            font-size: 12px;
+
+        }
+        .address span{
+            display: inline-block;
+            min-width: 50px;
+            height: 18px;
+            vertical-align: top;
+        }
+        .address p{
+            display: inline-block;
+            width: 200px;
+        }
+        .update a{
+            display: inline-block;
+            color: inherit;
+            margin: 3px 0;
+        }
+        .sign-up p{
+            font-size: 13px;
+            margin:5px 0 10px 0;
+        }
+        .sign-up input{
+            vertical-align: bottom;
+        }
+        .sign-up input[type="text"]{
+            border-style: none;
+            border-radius: 3px;
+            height: 25px;
+            color:#9c9c9c;
+            padding-left: 10px;
+        }
+        .sign-up input[type="button"]{
+            background-image: url("images/button-check.gif");
+            width: 25px;
+            height: 25px;
+            border-style: none;
+        }
+        .footer .warp>p{
+            margin: 20px 0;
+            text-align: center;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+<div class="header" id="header">
+    <div class="warp">
+        <img src="images/logo.jpg"/>
+        <div class="nav">
+            <ul>
+                <li class="on"><a href="javascript:">Home</a></li>
+                <li><a href="javascript:">About</a></li>
+                <li><a href="javascript:">Service</a></li>
+                <li><a href="javascript:">Solutions</a></li>
+                <li><a href="javascript:">Support</a></li>
+                <li><a href="javascript:">Blog</a></li>
+                <li><a href="javascript:">Contact</a></li>
+            </ul>
+            <div class="search">
+                <input type="search" value="Search"/>
+                <input type="button"/>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="introduction">
+    <div class="warp">
+        <div class="ads">
+        <div class="statement">
+            <p>This website template has been designed by Free Website Templates for you, for free.</p>
+            <p>You can remove any link to our website from this website template,
+                you're free to use this website template without linking back to us.</p>
+        </div>
+            <img src="images/discussing2.jpg"/>
+        <div class="display">
+            <img src="images/shake-hands.jpg">
+            <img src="images/professionals.jpg"/>
+        </div>
+            </div>
+        <ul>
+            <li class="select">
+                <p>
+                    <img src="images/meeting2.jpg"/>
+                    <a href="javascript:">Morbi quiseros sedquam interdum placerat</a>
+                    <br/>
+                    Fusce placerat tellusdiam rutrum porttitor
+                </p>
+            </li><li>
+                <p>
+                    <img src="images/flags2.jpg"/>
+                    <a href="javascript:">Ut posuere nibh in tortor</a>
+                    <br/>
+                    Phasellusposuere semper loremsodales orci fringilla eget.
+                </p>
+            </li><li>
+                <p>
+                    <img src="images/boys.jpg"/>
+                    <a href="javascript:">In sagittis lacus mollis nunc</a>
+                    <br/>
+                    malesuada et facilisisipsum scelerisque
+                </p>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="content">
+    <div class="warp">
+        <div class="blog">
+            <ul>
+                <li><h3>Blog</h3></li>
+                <li>
+                    <p>Quisque iaculis erat in velit fermentum pellentesque.</p>
+                    <span>Sept. 21 | by Nullam</span>
+                    <a href="javascript:">8</a>
+                </li>
+                <li>
+                    <p>Semper. Cras eu elit velit. Nullam vel eros turpis.</p>
+                    <span>Sept. 21 | by Nullam</span>
+                    <a href="javascript:">8</a>
+                </li>
+                <li>
+                    <p>Aenean id erat elit, quis venenatis erat. Cras ornare orci vitae metus</p>
+                    <span>Sept. 21 | by Nullam</span>
+                    <a href="javascript:">8</a>
+                </li>
+                <li>
+                    <p>Vivamus euismod dictum purus ac semper. Etiam sed elit id ante commodo</p>
+                    <span>Sept. 21 | by Nullam</span>
+                    <a href="javascript:">8</a>
+                </li>
+                <li>
+                    <p>Fusce ac quam nibh, at pharetra dolor. In quis odio arcu, vel laoreet eros. Nam vel sem dui.</p>
+                    <span>Sept. 21 | by Nullam</span>
+                    <a href="javascript:">8</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="tool">
+            <p>This website template has been designed by Free Website Templates for you, for free.
+                You can replace all this text with your own text.</p>
+            <ul>
+                <li>
+                   <a href="javascript:">
+                       <img src="images/globe.jpg"/>
+                       <h3>Lorem ipsum dolor sit amet</h3>
+                   </a>
+                    <p>Donec venenatis, mauris in blandit tempor, sem tellus vehicula lorem</p>
+                    <a href="javascript:">
+                        <img src="images/check.jpg">
+                        <h3> Quisque consequat</h3>
+                    </a>
+                    <p>Sed vitae massa at turpis mollis aliquam sed vitae tellus integer arcu</p>
+                </li><li>
+                    <a href="javascript:">
+                        <img src="images/tools.jpg"/>
+                        <h3>Proin condiment porttitor ultrices</h3>
+                    </a>
+                <p>Cras tristique faucibus sagittis. Praesent pulvinar, dolor in posuere vulputate</p>
+                <a href="javascript:">
+                    <img src="images/graph.jpg"/>
+                    <h3>Class aptent taciti sociosqu</h3>
+                </a>
+                <p>Nam quis arcu erat ultricies volutpat leo, in molestie est laoreet eu</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="warp">
+        <ul>
+            <li>
+                <h4>contact us</h4>
+                <address class="address">
+                    <ul>
+                        <li>
+                            <span>Email</span><p>: company@email.com</p>
+                        </li>
+                        <li>
+                            <span>Address</span><p>:189 Lorem Ipsum Pellentesque,
+                            Mauris Etiam ut velit odio Proin id nisi enim 0000</p>
+                        </li>
+                        <li>
+                            <span>Phone</span><p>: 117-683-9187-00</p>
+                        </li>
+                    </ul>
+                </address>
+            </li>
+            <li>
+                <div class="update">
+                    <h4>get update</h4>
+                    <ul>
+                        <li>
+                            <a href="javascript:">Blog</a>
+                        </li>
+                        <li>
+                            <a href="javascript:">Facebook</a>
+                        </li>
+                        <li>
+                             <a href="javascript:">Twitter</a>
+                        </li>
+                 </ul>
+                </div>
+            </li>
+            <li>
+                <div class="sign-up">
+                    <h4>sign-up for newsletter</h4>
+                    <p>In sollicitudin vulputate metus,
+                        sed commodo diam elementum nec. Sed et
+                        risus sed magna convallis adipiscing.</p>
+                    <form>
+                        <input type="text" value="Name"/>
+                        <input type="text" value="Enter Email Address"/>
+                        <input type="button"/>
+                    </form>
+                </div>
+            </li>
+        </ul>
+        <p>© Copyright © 2011. All rights reserved</p>
+    </div>
+</div>
+</body>
+</html>
