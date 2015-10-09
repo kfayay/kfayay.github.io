@@ -1,0 +1,63 @@
+/*normal*/
+ul{
+    list-style: none;
+}
+/*font-face*/
+@font-face {font-family: 'iconfont';
+    src: url('../iconFont/iconfont.eot'); /* IE9*/
+    src: url('../iconFont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../iconFont/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../iconFont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../iconFont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+/*Base Css*/
+/*display*/
+.dib{
+    display: inline-block;
+}
+/*margin*/
+.ml2{
+    margin-left: 2px;
+}
+.ml3{
+    margin-left: 3px;
+}
+.ml4{
+    margin-left: 4px;
+}
+.ml5 {
+    margin-left: 5px;
+}
+.ml10{
+    margin-left: 10px;
+}
+.mr2{
+    margin-right: 2px;
+}
+.mr3{
+    margin-right: 3px;
+}
+.mr4{
+    margin-right: 4px;
+}
+.mr5{
+    margin-right: 5px;
+}
+/*text-align*/
+.tac{
+    text-align: center;
+}
+.tal{
+    text-align: left;
+}
+/*line-height*/
+.lh44{
+    line-height: 44px;
+}
+/*position*/
+.pr{
+    position: relative;
+}
+.pa{
+    position: absolute;
+}
