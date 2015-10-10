@@ -27,7 +27,7 @@
     position: relative;
     -webkit-flex: 1;
 }
-.header-input input[type="text"]{
+.header-input input[type="search"]{
     background: #279270;
     border: none;
     border-radius: .74rem;
