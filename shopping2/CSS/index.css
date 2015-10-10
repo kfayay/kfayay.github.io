@@ -172,6 +172,7 @@
     font-size: .3rem;
 }
 .footer{
+    background: white;
     border-top: 0.04rem solid #898989;
     position: fixed;
     bottom: 0;
