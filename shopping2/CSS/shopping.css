@@ -1,0 +1,165 @@
+.header-color{
+    background: #36C597!important;
+}
+.ul-flex{
+    display: flex;
+    flex-flow: row;
+}
+.li-search{
+    flex: 1;
+}
+.li-coin{
+    width: 2em;
+    color: white;
+    vertical-align: 44px;
+}
+.li-search .input-search{
+    background: #269270;
+    margin: 5px 0;
+    padding: 7px;
+    border: none;
+    border-radius: 40px;
+    box-shadow: none;
+    height: 34px;
+}
+.span-search{
+    top: 14px;
+    left: 50%;
+    margin-left: -34px;
+}
+.ul-purchase{
+    width: 100%;
+    height: 100%;
+}
+.li-purchase{
+    width: 48%;
+    height: 100%;
+}
+.border-bottom{
+    border-bottom: 1px solid #D9D9D9;
+}
+.height-purchase{
+    height: 44px;
+    background: #fff;
+}
+.a-purchase{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #6B6B6B;
+    line-height: 43px;
+    padding: 12px 25px;
+}
+.active-purchase{
+    border-bottom: 2px solid ;
+    color: #35C496!important;
+}
+.shoplist{
+    display: flex;
+    flex-flow: row;
+}
+.list-menu{
+    border-right: 1px solid #d9d9d9;
+}
+.list-main{
+    flex: 1;
+    margin: 0;
+}
+.list-main ul li{
+    border: none;
+    padding:0 10px;
+}
+.menu-title{
+    color: #a0a0a0;
+    font-size: 1.2em;
+    position: relative;
+}
+.menu-title:before{
+    content: "";
+    border-top: 10px solid transparent;
+    border-right: 10px solid #dadada;
+    border-bottom: 10px solid #dadada;
+    border-left: 10px solid transparent;
+    bottom: 0;
+    height: 0;
+    position: absolute;
+    right: 0;
+    width: 0;
+}
+.main-title{
+    background: #efefef!important;
+}
+.footer{
+    border-top: 1px solid black;
+}
+.footer-wrapper{
+    position: relative;
+    margin: 5px 10px;
+}
+.footer-num{
+    font-size: 12px;
+    color: white;
+    background: #FA7221;
+    width: 18px;
+    height: 18px;
+    vertical-align: 18px;
+    border-radius: 50%;
+    z-index: 20;
+}
+.footer-wrapper:after{
+    color: #FA7221;
+    content: "\e604";
+    font-family: "iconfont"!important;
+    font-size: 2em;
+    font-weight: normal;
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
