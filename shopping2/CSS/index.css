@@ -47,7 +47,7 @@
     content: "\e61c";
     font-family: 'iconfont'!important;
     position: absolute;
-    left: -.3rem;
+    left: -.5rem;
 }
 .content{
     padding: 1.22rem 0 0 0;
@@ -71,7 +71,135 @@
     line-height: .83rem;
     margin: 0 .76rem;
 }
-.active{
+ .content-active{
     color: #35C597;
     border-bottom: 0.04rem solid;
+}
+.content-list{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+.content-list-view{
+    -webkit-flex: initial;
+    flex: initial;
+    min-width: 1.75rem;
+    border-right: 0.02rem solid #d5d5d5;
+}
+.content-list-item{
+    -webkit-flex: 1;
+    flex: 1;
+}
+.listview{
+    font-size: .28rem;
+    text-align: center;
+}
+.listview>li{
+    height: .9rem;
+    line-height: .9rem;
+}
+.listview li:first-of-type{
+    color: #a0a0a0;
+    position: relative;
+}
+.listview li:first-of-type:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: .15rem solid transparent;
+    border-right: .15rem solid #dadada;
+    border-bottom: .15rem solid #dadada;
+    border-left: .15rem solid transparent;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.listview .active{
+    border-left: .1rem solid #35C597;
+}
+.listitem-details li:first-of-type{
+    padding: 0 0 0 .2rem;
+    margin: 0;
+    background: #efefef;
+    font-size: .25rem;
+    text-align: left;
+    height: .5rem;
+    line-height: .5rem;
+    color: #a0a09e;
+}
+.listitem-details li{
+    margin: .3rem 0 0 .2rem;
+}
+.listitem-introduction{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+.listitem-img{
+    -webkit-flex: initial;
+    flex: initial;
+    width: 1.68rem;
+    height: 1.68rem;
+    font-size: .3rem;
+    border: none;
+}
+.listitem-p{
+    -webkit-flex: 1;
+    flex: 1;
+    margin-left: .2rem;
+    font-size: .24rem;
+    color: #939393;
+}
+.listitem-p .title{
+    color: #282828;
+    display: inline-block;
+    padding-bottom:.2rem ;
+    font-size: .3rem;
+}
+.footer{
+    border-top: 0.04rem solid #898989;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    font-size: .32rem;
+    height: 1rem;
+    width: 100%;
+    line-height: 1rem;
+}
+.footer-gouwu{
+    display: inline-block;
+    margin: 0 .2rem;
+    position: relative;
+}
+.icon-gouwu{
+    font-size: .4rem;
+    color: #FA7221;
+}
+.footer-number{
+    font-size: .24rem;
+    height: .37rem;
+    width: .37rem;
+    background: #FA7221;
+    color: white;
+    text-align: center;
+    line-height: .37rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.15rem;
+    left: 0.15rem;
+}
+.footer-button{
+    width: 2.1rem;
+    height: .7rem;
+    border-radius: .7rem;
+    background: #FA7221;
+    color: white;
+    line-height: .7rem;
+    text-align: center;
+    border:none;
+    position: absolute;
+    bottom: .17rem;
+    right: .22rem;
 }
