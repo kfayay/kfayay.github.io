@@ -1,5 +1,5 @@
 html,
-body {
+body{
     height: 100%;
 }
 .header{
@@ -11,7 +11,6 @@ body {
     padding: .16rem 0;
     position: fixed;
     top: 0;
-    z-index: 1001;
     -webkit-flex-direction: row;
     width: 100%;
     -webkit-align-items: center;
@@ -37,8 +36,8 @@ body {
     background: #279270;
     border: none;
     border-radius: .74rem;
-    min-width: 5.7rem;
     height: 100%;
+    width: 100%;
 }
 .header-input .header-search{
     color: #35C597;
@@ -56,14 +55,17 @@ body {
     left: -.5rem;
 }
 .content{
+    position: relative;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
     flex-direction: column;
-    position: relative;
-    margin: 1.22rem 0 1rem 0;
+    overflow: hidden;
     width: 100%;
+    height: 100%;
 }
+.head{ height: 1.22rem;}
+.foot{ height: 1rem;}
 .content-purchase{
     display: -webkit-flex;
     display: flex;
@@ -100,12 +102,15 @@ body {
     flex: initial;
     min-width: 1.75rem;
     border-right: 0.04rem solid #d5d5d5;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 .content-list-item{
     -webkit-flex: 1;
     flex: 1;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    margin-bottom: 1rem;
 }
 .listview{
     font-size: .28rem;
@@ -119,7 +124,7 @@ body {
     color: #a0a0a0;
     position: relative;
 }
-.listview li:first-of-type:after{
+.listview li:first-of-type:before{
     content: "";
     width: 0;
     height: 0;
@@ -130,6 +135,8 @@ body {
     position: absolute;
     right: 0;
     bottom: 0;
+}
+.list li:first-of-type:after{
 }
 .listview .active{
     border-left: .1rem solid #35C597;
@@ -146,12 +153,57 @@ body {
 }
 .listitem-details li{
     margin: .3rem 0 0 .2rem;
+    padding-right: .3rem;
+    border-bottom: 1px solid #dadada;
+}
+.listitem-price{
+    display: block;
+    margin: .33rem 0;
+}
+.price1{
+    font-size: .28rem;
+    color: #ff6c00;
+}
+.price2{
+    font-size: .22rem;
+    color: #acacac;
 }
 .listitem-introduction{
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: row;
     flex-direction: row;
+}
+.listitem-number{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+.listitem-data{
+    -webkit-flex: 1;
+    flex: 1;
+}
+.listitem-sum{
+    -webkit-flex: 1;
+    flex: 1;
+}
+.listitem-sum input[type=text]{
+    height: .6rem;
+    width: 2rem;
+    font-size: .2rem;
+    border: none;
+    display: block;
+    border: 2px solid #dadada;
+    border-radius: .3rem;
+    text-align: center;
+    margin: .19rem 0;
+}
+.listitem-sum span{
+    display: block;
+    font-size: .22rem;
+    text-align: center;
+    width: 2rem;
 }
 .listitem-img{
     -webkit-flex: initial;

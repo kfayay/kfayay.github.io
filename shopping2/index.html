@@ -3,97 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Pragma" content="no-cache">
+    <link href="CSS/normalize.css" rel="stylesheet" type="text/css">
+    <link href="CSS/Base.css" rel="stylesheet" type="text/css">
+    <link href="CSS/index.css" rel="stylesheet" type="text/css">
     <style>
         *{
             margin: 0;
             padding: 0;
         }
-        html,
+        html{font-size: 100px;}
+        @media screen and (min-width:414px) and (max-width: 749px) {
+            html{font-size: 55.2px;}
+        }
+        @media screen and (min-width: 375px) and (max-width: 413px) {
+            html{font-size: 50px;}
+        }
+        @media screen and (min-width: 320px) and (max-width: 374px) {
+            html{font-size: 42.6666667px;}
+        }
         body{
-            width: 100%;
-            height: 100%;
-        }
-        .header{
-            width: 100%;
-            position: fixed;
-            top: 0;
-            z-index: 1000;
-            height: 44px;
-            background: purple;
-        }
-        .footer{
-            width: 100%;
-            position: fixed;
-            bottom: 0;
-            z-index: 1001;
-            height: 44px;
-            background: darkgreen;
-        }
-        .content{
-            display: -webkit-flex;
-            display: flex;
-            -webkit-flex-direction: column;
-            flex-direction: column;
-            background: #dcdcdc;
-            height: 100%;
-        }
-        .head{
-            height: 44px;
-            width: 100%;
-        }
-        .foot{
-            height: 44px;
-            width: 100%;
-        }
-        .main{
-            -webkit-flex: 1;
-            flex: 1;
-            display: flex;
-            display: -webkit-flex;
-            flex-direction: row;
-            -webkit-flex-direction: row;
-            -webkit-overflow-scrolling: touch
-        }
-        p{
-            height: 100px;
-            width: 100%;
-            text-align: center;
-        }
-        .left{
-            background: #007aff;
-            -webkit-flex: 1;
-            flex: 1;
-        }
-        .right{
-            flex: 1;
-            -webkit-flex: 1;
-            overflow: scroll;
+            font-family: 'Helvetica Neue', Helvetica, STHeiTi, Arial, sans-serif;
         }
     </style>
     <title></title>
 </head>
 <body>
-<header class="header"></header>
+<header class="header">
+    <a class="icon icon-home header-icon"></a>
+    <div class="header-input">
+        <input type="text">
+        <span class="header-search">请输入商品</span>
+    </div>
+    <a class="icon icon-user header-icon"></a>
+</header>
 <div class="content">
     <div class="head"></div>
-    <div class="main">
-        <div class="left"></div>
-        <div class="right">
-            <p>测试</p>
-            <p>测试</p>
-            <p>测试</p>
-            <p>测试</p>
-            <p>测试</p>
-            <p>测试</p>
-            <p>测试</p>
-            <p>测试</p>
-            <p>测试</p>
-            <p>测试</p>
-            <p>测试</p>
+    <div class="content-purchase">
+        <a class="content-purchase-a content-active">分类购买</a>
+        <a class="content-purchase-a">经常购买</a>
+    </div>
+    <div class="content-list">
+        <div class="content-list-view">
+            <ul class="listview">
+                <li>蔬菜水果</li>
+                <li class="active">全部</li>
+                <li>根菜类</li>
+                <li>白菜类</li>
+                <li>薯芋类</li>
+                <li>芥菜类</li>
+                <li>甘菜类</li>
+                <li>叶菜类</li>
+            </ul>
         </div>
+        <div class="content-list-item">
+            <ul class="listitem">
+                <li>
+                    <ul class="listitem-details">
+                        <li>全部</li>
+                        <li>
+                            <div class="listitem-introduction">
+                                <img src="#" alt="白菜" class="listitem-img">
+                                <p class="listitem-p">
+                                    <span class="title">白菜</span>
+                                    <br>
+                                    按袋销售，鲜绿，带点根，叶嫩
+                                </p>
+                            </div>
+                            <div class="listitem-number">
+                                <div class="listitem-data">
+                                    <span class="listitem-price price1">￥10.00/袋</span>
+                                    <span class="listitem-price price2">5斤装，2元/斤</span>
+                                </div>
+                                <div class="listitem-sum">
+                                    <input type="text" value="12">
+                                    <span>12袋，共60斤</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="listitem-introduction">
+                                <img src="#" alt="白菜" class="listitem-img">
+                                <p class="listitem-p">
+                                    <span class="title">白菜</span>
+                                    <br>
+                                    按袋销售，鲜绿，带点根，叶嫩
+                                </p>
+                            </div>
+                            <div class="listitem-number">
+                                <div class="listitem-data">
+                                    <span class="listitem-price price1">￥10.00/袋</span>
+                                    <span class="listitem-price price2">5斤装，2元/斤</span>
+                                </div>
+                                <div class="listitem-sum">
+                                    <input type="text" value="12">
+                                    <span>12袋，共60斤</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="listitem-introduction">
+                                <img src="#" alt="白菜" class="listitem-img">
+                                <p class="listitem-p">
+                                    <span class="title">白菜</span>
+                                    <br>
+                                    按袋销售，鲜绿，带点根，叶嫩
+                                </p>
+                            </div>
+                            <div class="listitem-number">
+                                <div class="listitem-data">
+                                    <span class="listitem-price price1">￥10.00/袋</span>
+                                    <span class="listitem-price price2">5斤装，2元/斤</span>
+                                </div>
+                                <div class="listitem-sum">
+                                    <input type="text" value="12">
+                                    <span>12袋，共60斤</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="listitem-introduction">
+                                <img src="#" alt="白菜" class="listitem-img">
+                                <p class="listitem-p">
+                                    <span class="title">白菜</span>
+                                    <br>
+                                    按袋销售，鲜绿，带点根，叶嫩
+                                </p>
+                            </div>
+                            <div class="listitem-number">
+                                <div class="listitem-data">
+                                    <span class="listitem-price price1">￥10.00/袋</span>
+                                    <span class="listitem-price price2">5斤装，2元/斤</span>
+                                </div>
+                                <div class="listitem-sum">
+                                    <input type="text" value="12">
+                                    <span>12袋，共60斤</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
     </div>
     <div class="foot"></div>
 </div>
-<footer class="footer"></footer>
+<footer class="footer">
+    <div class="footer-gouwu">
+        <span class="icon icon-gouwu"></span>
+        <span class="footer-number">12</span>
+    </div>
+    <span>合计 ￥289.00</span>
+    <button class="footer-button">加入购物车</button>
+</footer>
 </body>
 </html>
