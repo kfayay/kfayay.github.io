@@ -1,0 +1,146 @@
+html,
+body{
+    font-size: 100px;
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 749px) and (min-width: 417px) {
+    html,
+    body{
+        font-size: 55.6px;
+    }
+}
+@media screen and (max-width: 416px) and (min-width: 375px) {
+    html,
+    body{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 374px) and (min-width: 320px) {
+    html,
+    body{
+        font-size: 42.66666667px;
+    }
+}
+.shop-view{
+    width: 100%;
+    height: 100%;
+}
+.shop-header-icon{
+    width: 2em;
+
+    font-size: .48rem;
+}
+.ios7 .shop-view .shop-header{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+
+    height: .9rem;
+
+    text-align: center;
+    line-height: .9rem;
+
+    color: white;
+    background: #35c597;
+}
+input[type="search"]{
+    -webkit-flex: 1;
+    flex: 1;
+
+    margin: auto 0;
+    border: 0;
+    height: .60rem;
+
+    font-size: .32rem;
+    text-align: center;
+
+    color: #35c597;
+    background: #279270;
+}
+.panel{
+    padding: 0;
+}
+.shop-subnav{
+    display: -webkit-flex;
+    display: flex;
+    
+    -webkit-flex-direction: row;
+    flex-direction: row;
+
+    border-bottom: 1px solid #d5d5d5;
+
+    height: .83rem;
+}
+.shop-subnav>span{
+    -webkit-flex: 1;
+    flex: 1;
+
+    margin: 0 .75rem;
+
+    font-size: .3rem;
+    line-height: .83rem;
+    text-align: center;
+}
+.shop-subnav .shop-subnav-active{
+    border-bottom: 2px solid;
+
+    color: #35c597;
+}
+.shop-content{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+
+    height: calc(100% - 0.83rem);
+    height: -webkit-calc(100% - 0.83rem);
+}
+.shop-sidebar{
+    overflow: scroll;
+    -webkit-overflow-scolling: touch;
+
+    border-right: 1px solid #d9d9d9;
+    width: 1.75rem;
+
+    font-size: .28rem;
+    text-align: center;
+}
+.shop-sidebar li{
+    height: .9rem;
+
+    line-height: .9rem;
+}
+.shop-sidebar li:first-child{
+    position: relative;
+
+    color: #a0a0a0;
+}
+.shop-sidebar li:first-child:after{
+    content: "";
+
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+
+    border-top: .14rem solid transparent;
+    border-left: .14rem solid transparent;
+    border-right: .14rem solid #dadada;
+    border-bottom: .14rem solid #dadada;
+    width: 0;
+    height: 0;
+}
+.shop-sidebar li.shop-sidebar-active{
+    border-left: 4px solid;
+
+    color: #35c597;
+}
+
+
+
+.shop-footer{
+    height: 1rem;
+
+    background: white;
+}
