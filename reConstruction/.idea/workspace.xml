@@ -24,8 +24,8 @@
       <file leaf-file-name="cgt_purchase.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cgt_purchase.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6635945">
-              <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.16589862">
+              <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -56,7 +56,7 @@
       <file leaf-file-name="cgt_purchase.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/cgt_purchase.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-36.814816">
+            <state vertical-scroll-proportion="-34.814816">
               <caret line="132" column="25" selection-start-line="132" selection-start-column="25" selection-end-line="132" selection-end-column="25" />
               <folding />
             </state>
@@ -90,8 +90,8 @@
         <option value="$PROJECT_DIR$/styles/icon.css" />
         <option value="$PROJECT_DIR$/styles/base.css" />
         <option value="$PROJECT_DIR$/styles/cgt_purchase.less" />
-        <option value="$PROJECT_DIR$/cgt_purchase.html" />
         <option value="$PROJECT_DIR$/styles/cgt_purchase.css" />
+        <option value="$PROJECT_DIR$/cgt_purchase.html" />
       </list>
     </option>
   </component>
@@ -411,14 +411,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data-models/iconfont/ux_1444753887_569736/iconfont.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/zepto.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -451,14 +443,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/cgt_purchase.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-36.814816">
-          <caret line="132" column="25" selection-start-line="132" selection-start-column="25" selection-end-line="132" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/cgt_purchase.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.2324022">
@@ -467,10 +451,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/styles/cgt_purchase.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-34.814816">
+          <caret line="132" column="25" selection-start-line="132" selection-start-column="25" selection-end-line="132" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data-models/iconfont/ux_1444753887_569736/iconfont.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cgt_purchase.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6635945">
-          <caret line="38" column="48" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.16589862">
+          <caret line="8" column="56" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
           <folding>
             <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
