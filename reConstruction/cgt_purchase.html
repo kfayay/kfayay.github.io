@@ -13,9 +13,65 @@
 <div class="view">
     <header class="header">
         <a class="iconfont icon-shouye icon"></a>
-        <input class="search" type="search">
+        <div class="search">
+            <span class="hint">大家都在搜：大白菜</span>
+            <input type="search" value="请输入商品">
+            <span class="iconfont icon-sousuo icon-search"></span>
+        </div>
         <a class="iconfont icon-user icon"></a>
+        <button class="cancel" type="button">取消</button>
     </header>
+    <!--@@TODO 提示热门搜索，搜索历史-->
+    <div class="search-container">
+        <div class="hot-search">
+            <h4>热门搜索</h4>
+            <ul>
+                <li>湖南绿椒</li>
+                <li>包菜</li>
+                <li>白菜</li>
+                <li>青菜</li>
+                <li>胡萝卜</li>
+                <li>马铃薯</li>
+            </ul>
+        </div>
+        <div class="search-history">
+            <h4>搜索历史</h4>
+            <!--@@TODO 删除搜索历史-->
+            <span style="display: none"></span>
+            <ul>
+                <li>湖南椒</li>
+                <li>花菜</li>
+                <li>牛肉</li>
+                <li>香菜</li>
+            </ul>
+        </div>
+    </div>
 </div>
+<script src="scripts/zepto.min.js"></script>
+<script>
+    //@@TODO 当搜索框获取焦点时，文字居左，显示取消
+    //搜索框响应函数
+    function search(){
+        var input=$("input[type='search']");
+        var hint=$(".hint");
+        var user=$("a.icon-user");
+        var cancel=$(".cancel");
+        input.val("").css("text-align","left");
+        //设置提示信息
+        //hint.innerText="";
+        hint.css("visibility","visible");
+        user.css("display","none");
+        cancel.css("display","inline-block");
+        input.on("keyup", function () {
+            hint.hide();
+        })
+    }
+    $(function () {
+        var input=$("input[type='search']");
+        input.on("focus", function () {
+            search();
+        });
+    });
+</script>
 </body>
 </html>
