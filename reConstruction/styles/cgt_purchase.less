@@ -120,9 +120,17 @@
   background: @header-bgcolor;
 }
 .search-container{
+  opacity: 0;
+
   padding: .6rem 0 0 .3rem;
 
   background: #f3f6f6;
+
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
   h4{
     padding-bottom: .3rem;
 

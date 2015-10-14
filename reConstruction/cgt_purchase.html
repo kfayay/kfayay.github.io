@@ -36,7 +36,7 @@
         </div>
         <div class="search-history">
             <h4>搜索历史</h4>
-            <!--@@TODO 删除搜索历史-->
+            <!--@@TODO 删除搜索历史；历史条数显示的限制；弹出键盘遮挡问题-->
             <span style="display: none"></span>
             <ul>
                 <li>湖南椒</li>
@@ -52,6 +52,8 @@
     //@@TODO 当搜索框获取焦点时，文字居左，显示取消
     //搜索框响应函数
     function search(){
+        var searchContainer=$(".search-container");
+        searchContainer.css("opacity","1");
         var input=$("input[type='search']");
         var hint=$(".hint");
         var user=$("a.icon-user");
@@ -64,7 +66,7 @@
         cancel.css("display","inline-block");
         input.on("keyup", function () {
             hint.hide();
-        })
+        });
     }
     $(function () {
         var input=$("input[type='search']");
