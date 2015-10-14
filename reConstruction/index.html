@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>Purchase</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link href="styles/base.css" rel="stylesheet">
+    <link href="styles/icon.css" rel="stylesheet">
+    <link href="styles/cgt_purchase.less" rel="stylesheet/less">
+    <script src="scripts/less.min.js"></script>
+</head>
+<body>
+<div class="view">
+    <header class="header">
+        <a class="iconfont icon-shouye icon"></a>
+        <div class="search">
+            <span class="hint">大家都在搜：大白菜</span>
+            <input type="search" value="请输入商品">
+            <span class="iconfont icon-sousuo icon-search"></span>
+        </div>
+        <a class="iconfont icon-user icon"></a>
+        <button class="cancel" type="button">取消</button>
+    </header>
+    <!--@@TODO 提示热门搜索，搜索历史-->
+    <div class="search-container">
+        <div class="hot-search">
+            <h4>热门搜索</h4>
+            <ul>
+                <li>湖南绿椒</li>
+                <li>包菜</li>
+                <li>白菜</li>
+                <li>青菜</li>
+                <li>胡萝卜</li>
+                <li>马铃薯</li>
+            </ul>
+        </div>
+        <div class="search-history">
+            <h4>搜索历史</h4>
+            <!--@@TODO 删除搜索历史；历史条数显示的限制；弹出键盘遮挡问题-->
+            <span style="display: none"></span>
+            <ul>
+                <li>湖南椒</li>
+                <li>花菜</li>
+                <li>牛肉</li>
+                <li>香菜</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="scripts/zepto.min.js"></script>
+<script>
+    //@@TODO 当搜索框获取焦点时，文字居左，显示取消
+    //搜索框响应函数
+    function search(){
+        var searchContainer=$(".search-container");
+        searchContainer.css("opacity","1");
+        var input=$("input[type='search']");
+        var hint=$(".hint");
+        var user=$("a.icon-user");
+        var cancel=$(".cancel");
+        input.val("").css("text-align","left");
+        //设置提示信息
+        //hint.innerText="";
+        hint.css("visibility","visible");
+        user.css("display","none");
+        cancel.css("display","inline-block");
+        input.on("keyup", function () {
+            hint.hide();
+        });
+    }
+    $(function () {
+        var input=$("input[type='search']");
+        input.on("focus", function () {
+            search();
+        });
+    });
+</script>
+</body>
+</html>
