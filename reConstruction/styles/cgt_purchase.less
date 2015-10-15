@@ -11,6 +11,7 @@
 @header-bgcolor: #35c597;
 @header-height: .9rem;
 
+
 .display-flex (@direction) {
     display: -webkit-flex;
     display: flex;
@@ -23,12 +24,30 @@
   flex: @num;
 }
 
+.view{
+  .display-flex(column);
+
+  //作为当前显示的容器
+  .active{
+    z-index: 1000;
+
+    position: relative;
+
+    .flex-num(1);
+  }
+}
+
 .header{
     .display-flex(row);
 
     height: @header-height;
 
     background: @header-bgcolor;
+  
+  &.header-focus{
+    background: white;
+    border-bottom: 1px solid #d6d9d9;
+  }
 }
 .icon{
   display: inline-block;
@@ -39,6 +58,11 @@
   line-height: @header-height;
 
   color: white;
+
+  //当输入框获取焦点的时候不显示主页和用户中心按钮
+  &.icon-focus{
+    display: none;
+  }
 }
 .search{
   .display-flex(row);
@@ -59,6 +83,13 @@
   color: @header-bgcolor;
   background: #279270;
 
+  &.search-focus{
+    margin: auto .2rem;
+
+    color: #9f9f9f;
+    background: #e3e3e3;
+  }
+  
   .hint{
     z-index: 1;
     display: inline-block;
@@ -72,43 +103,73 @@
     display: inline-block;
 
     position: absolute;
-    right: 0;
-    bottom: 0;
+    left: 50%;
 
-    padding: 0 .5em;
+    margin-left: -2.5em;
 
-    /*&:before{
+    line-height: .6rem;
+
+    &::before{
       content: "\3465";
 
-      font-family: iconfont!important;
-    }*/
+      display: inline-block;
+
+      padding: 0 2px;
+
+      font-family: iconfont !important;
+      font-style:normal;
+      -webkit-font-smoothing: antialiased;
+      -webkit-text-stroke-width: 0.2px;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    //当获取焦点的时候改变位置，居左
+    &.icon-search-focus{
+      left: .5em;
+
+      margin: 0;
+    }
+
   }
   input[type="search"]{
     z-index: 2;
     display: block;
 
+    .flex-num(1);
+
     position: relative;
-    margin: .14rem 2em .14rem 1em;
+    margin: auto;
     width: 100%;
 
     border: 0;
 
     font-size: .3rem;
-    text-align: center;
 
     color: @header-bgcolor;
     background: transparent;
 
+    outline: medium;
+
     -webkit-tap-highlight-color: rgba(0,0,0,0);
-  }
-  .cancel{
-    display: none;
+
+    -webkit-transition: width 10s;
+    -moz-transition: width 10s;
+    -ms-transition: width 10s;
+    -o-transition: width 10s;
+    transition: width 10s;
+
+    &.input-search-focus{
+      left: 1.7em;
+
+      margin-right: 1.8em;
+      color: #9f9f9f;
+    }
   }
 }
 .cancel{
   display: none;
 
   margin: auto .2rem;
+  margin-left: 0;
   border: 0;
   height: .6rem;
   width: 2.5em;
@@ -116,10 +177,15 @@
   font-size: .3rem;
   text-align: center;
 
-  color: white;
-  background: @header-bgcolor;
+  color: @header-bgcolor;
+  background: white;
+
+  &.cancel-focus{
+    display: inline-block;
+  }
 }
 .search-container{
+  display: none;
   opacity: 0;
 
   padding: .6rem 0 0 .3rem;
@@ -131,6 +197,11 @@
   -ms-transition: opacity 1s;
   -o-transition: opacity 1s;
   transition: opacity 1s;
+
+  &.search-container-focus{
+    display: block;
+    opacity: 1;
+  }
   h4{
     padding-bottom: .3rem;
 
@@ -168,5 +239,13 @@
 
       font-size: .24rem;
     }
+  }
+}
+
+.footer{
+
+  //控制是否显示footer
+  &.active{
+
   }
 }
